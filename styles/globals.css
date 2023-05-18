@@ -36,3 +36,34 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+.mt-2 {
+  margin-top: 20px;
+}
+.m-negative {
+  margin-top: -20px;
+}
+.image-container {
+  width: 75vw;
+  height: auto;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover;
+  z-index: -2;
+}
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.icon-size {
+  text-align: center;
+}
