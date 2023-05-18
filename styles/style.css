@@ -60,7 +60,7 @@
    background-position: center center;
    filter: brightness(60%);
    /*clip-path: polygon(100% 89%, 83% 100%, 69% 89%, 53% 100%, 42% 91%, 27% 100%, 13% 90%, 0 100%, 0 0, 100% 0);*/
-   clip-path: circle(85.2% at 50% -17%);
+   clip-path: circle(85% at 50% -110%);
 }
 .hero-content {
    position: relative;
@@ -84,7 +84,7 @@
    background-color: #ae2d59;
    color: white;
    border: 1px solid #cb376a;
-   margin-top: 5rem;
+   margin-top: 2.5rem;
    padding: 0.9375rem 1.875rem;
    font-family: "Monserrat", sans-serif;
    font-size: 1.125rem;
@@ -333,7 +333,9 @@ ul.breadcrumb li a:hover {
         display: block;
         margin: auto;
     }
-    
+    .hero::before {
+      clip-path: circle(85% at 50% -20%);
+    }
     .hero-content {
        position: relative;
        font-family: "Monserrat", sans-serif;
@@ -355,7 +357,7 @@ ul.breadcrumb li a:hover {
        background-color: #ae2d59;
        color: white;
        border: 1px solid #cb376a;
-       margin-top: 2.5rem;
+       margin-top: 1.2rem;
        padding: 0.9375rem 1.875rem;
        font-family: "Monserrat", sans-serif;
        font-size: 1.125rem;
@@ -429,6 +431,9 @@ ul.breadcrumb li a:hover {
     .hero {
        height: 70vh;
     }
+    .hero::before {
+      clip-path: circle(85% at 50% -110%);
+    }
     .hero-content {
        position: relative;
        font-family: "Monserrat", sans-serif;
@@ -450,7 +455,7 @@ ul.breadcrumb li a:hover {
        background-color: #ae2d59;
        color: white;
        border: 1px solid #cb376a;
-       margin-top: 2.5rem;
+       margin-top: 1.2rem;
        padding: 0.9375rem 1.875rem;
        font-family: "Monserrat", sans-serif;
        font-size: 1.125rem;
