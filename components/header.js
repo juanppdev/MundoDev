@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useState } from 'react';
-import ClearIcon from '@material-ui/icons/Clear';
-import ReorderIcon from '@material-ui/icons/Reorder';
+import {MdOutlineClear} from 'react-icons/md';
+import {IoReorderFourSharp} from 'react-icons/io5';
 import Image from 'next/image'
 
 export default function Header() {
@@ -24,7 +24,7 @@ export default function Header() {
                     <h1>MundoDev</h1>
                 </div>
                 <div class="btn-toggle" onClick={handleClick}>
-                        {activeBtn ? <ClearIcon fontSize="large"/> : <ReorderIcon fontSize="large"/>}
+                        {activeBtn ? <MdOutlineClear/> : <IoReorderFourSharp/>}
                 </div>
                 <ul class={activeBtn ? "coontainer-expanded" : "container-links"}>
                     <li><Link href="/">Inicio</Link></li>
