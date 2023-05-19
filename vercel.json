@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/inicio"
+    },
+    {
+      "src": "/about",
+      "dest": "/about"
+    },
+    {
+      "src": "/blog",
+      "dest": "/blog"
+    },
+    {
+      "src": "/fomtal",
+      "dest": "/"
+    },
+    {
+      "src": "/portfolio",
+      "dest": "/portfolio"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404"
+    }
+  ]
+}
