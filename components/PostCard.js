@@ -8,7 +8,7 @@ export default function PostCard({title, imagen, imagen_perfil, categoria, conte
     
   return (
       <>
-      <Link href={`blog/${title}`}>
+      <Link href={`${title}`}>
         <article class="card">
             <header class="header-card">
                 <Image src={imagen} width={1000} height={600} />
