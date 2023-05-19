@@ -25,7 +25,7 @@ export default function Home() {
         </section>
         <hr/>
         <section class="st-service">
-            <h1>Que hago?</h1>
+            <h1>Que hago?...</h1>
             <article class="st-article">
               <div class="icon-size">
                 <MdOutlineDevices size={"5rem"}/>
