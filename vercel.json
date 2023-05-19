@@ -1,11 +1,11 @@
 {
   "functions": {
     "pages/api/posts/index.js": {
-      "memory": 3008,
+      "memory": 512,
       "maxDuration": 1
     },
     "pages/api/posts/[id].js": {
-      "memory": 1024,
+      "memory": 512,
       "maxDuration": 1
     }
   }
