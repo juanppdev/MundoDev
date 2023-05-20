@@ -30,7 +30,7 @@ export default function Blog({posts = []}) {
 }
 
 export const getServerSideProps = async () => {
-    const { data: posts } = await axios.get("http://localhost:3000/api/posts")
+    const { data: posts } = await axios.get("https://mundodev-juanppdev.vercel.app/posts")
 
     return {
         props: {
