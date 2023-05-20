@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function PostCard({title, imagen, imagen_perfil, categoria, contenido, fecha, nombreAutor, btn_link}) {
     
     const date = new Date(fecha);
-    const formatDate = date.toISOString()
+    const formatDate = date.toISOString().substring(0,10)
     
   return (
       <>
