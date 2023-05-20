@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Blog({post}) {
     
     const date = new Date(post.fecha);
-    const formatDate = date.toISOString().substring(0,10)
+    const formatDate = date.toISOString()
   
   return (
       
