@@ -1,12 +1,12 @@
 import axios from 'axios'
-import Layout from '../components/layout'
-import Header from '../components/header'
+import Layout from '../../components/layout'
+import Header from '../../components/header'
 import Image from 'next/image'
 
 export default function Blog({post}) {
     
     const date = new Date(post.fecha);
-    const formatDate = date.toISOString()
+    const formatDate = date.toISOString().split('T')[0]
   
   return (
       
@@ -37,7 +37,7 @@ export default function Blog({post}) {
 }
 
 export const getServerSideProps = async ({ query }) => {
-    const { data: post } = await axios.get("https://mundodev-juanppdev.vercel.app/api/posts/" + query.id
+    const { data: post } = await axios.get("http://localhost:3000/api/posts/" + query.id
     );
     
     console.log(post)

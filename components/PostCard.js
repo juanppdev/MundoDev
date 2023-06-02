@@ -4,11 +4,11 @@ import Image from 'next/image'
 export default function PostCard({title, imagen, imagen_perfil, categoria, contenido, fecha, nombreAutor, btn_link}) {
     
     const date = new Date(fecha);
-    const formatDate = date
+    const formatDate = date.toISOString().split('T')[0]
     
   return (
       <>
-      <Link href={`${title}`}>
+      <Link href={`/blog/${title}`}>
         <article class="card">
             <header class="header-card">
                 <Image src={imagen} width={1000} height={600} />
